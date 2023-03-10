@@ -39,13 +39,13 @@ service:
   targetPort: 3000
 
 ingress:
-  enabled: true
+  enabled: false
   className: ""
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: theia-igorioshikawa.grupo2.jackexperts.com
+    - host: theia-igorioshikawa.grupo2.helm.jackexperts.com
       paths:
         - path: /
           pathType: ImplementationSpecific
