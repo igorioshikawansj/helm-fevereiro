@@ -87,3 +87,12 @@ readinessProbe:
   httpGet:
     path: /
     port: http
+
+configMap:
+  name: ""
+  create: true
+  data:
+    script01.sh: |
+      echo oi
+    script02.sh: |
+      echo treinamento

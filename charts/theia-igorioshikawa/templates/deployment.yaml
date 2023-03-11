@@ -59,3 +59,8 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      volumes:
+      - name: config
+        configMap: 
+          name: {{ .Values.configMap.name | default (include "theia-igorioshikawa.fullname" .) }}
+          defaultMode: 509
